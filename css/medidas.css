@@ -1,0 +1,106 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: inherit;
+}
+/*1em es 16 px tomando como referencia el tamano de su ancestro mas cercano*/
+
+.header{
+    width: 100%;
+    height: 50px;
+    padding-left: 1em;
+    padding-top: .2em;
+}
+
+.header-blue{
+    background-color: darkgoldenrod;
+    color: white;
+    font-size: .8em;
+    font-family:sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.content{
+    margin-top: 1em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.2em solid black;
+}
+
+.content h2{
+    background-color: beige;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+.article{
+    font-size: 20px;
+}
+
+.p2{
+ font-size: 1em;
+ background-color: aqua;
+ border: 0.2em solid black;
+ position: relative;
+ top: 2em;
+ left: 2em;
+}
+
+.p2::before{
+    content: '{em} equibale a 20px';
+    position: relative;
+    bottom: 1.9em;
+    background-color: aqua;
+    padding: .1em;
+    border-radius: 5px;
+}
+
+.mt-50{
+    margin-top: 4rem;
+}
+
+.p-rem{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+}
+
+.p-rem2{
+    background-color: blue;
+    color: white;
+    border:0.1rem solid black;
+    position: relative;
+    top: 2rem;
+    left: 1rem;
+}
+
+.p-rem2::before{
+    content:'{REM} se basa en el font size de HTML';
+    color: black;
+    position: relative;
+    bottom: 1.5rem;
+    background-color: blueviolet;
+    padding: .2rem;
+    border-radius: 5px;
+    
+}
+
+.p-ch{
+    width: 4ch;
+    background-color: red;
+    color: white;
+}
+
+.p-ch-2{
+    width: 5ch;
+    background-color: blue;
+}
