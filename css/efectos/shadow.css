@@ -122,7 +122,12 @@ html{
 }
 .donut-gradient{
     border-radius: 50%;
-    background-image: radial-gradient(white 50%,black 51% 52% ,transparent 53%),
+    background-image: radial-gradient(
+        white 50%,
+        black 51%
+         52% ,
+         transparent 53%),
+         
     conic-gradient(
         cyan 0 20%,
         blue 20% 80%,

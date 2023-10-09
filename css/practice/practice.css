@@ -24,6 +24,8 @@ html{
 /*a*/
 .a{
     text-decoration: none;
+    display: inline-block;
+    padding: 1rem;
     margin-left: 1rem;
     font-size: 1.1rem;
     color: var(--font-color-black);
@@ -31,6 +33,9 @@ html{
 
 .a:hover{
     text-decoration: underline;
+    background-color: var(--color-blue);
+    color: var(--font-color-white);
+    border-radius: .4rem;
 }
 
 .a-post{
@@ -97,6 +102,22 @@ body{
     display: flex;
 }
 
+.container-footer-img-p{
+    display: flex;
+    align-items: center;
+}
+
+.container-h3-p{
+    width:60%;
+}
+
+.container-redes{
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    border-left: thin solid var(--color-green);
+    margin-left: 1rem;
+}
 /*d*/
 
 
@@ -107,8 +128,12 @@ body{
 /*f*/
 .footer{
     background-image: linear-gradient(-360deg,#b3b3b3c0,white);
+    line-height: 1.5rem;
+    color: #222222d7;
     padding: 1rem;
     margin-top: 1rem;
+    display: flex;
+
 }
 
 /*g*/
@@ -203,6 +228,10 @@ body{
     margin-right: 2rem;
 }
 
+.img-footer{
+    width: 3rem;
+}
+
 /*j*/
 
 
@@ -238,13 +267,32 @@ body{
     color: var(--font-color-white);
 }
 
+.p-redSocial{
+    font-size: .2;
+    font-weight: 300;
+    color: var(--font-color-black);
+    padding-left: .5rem ;
+}
+
+.p-redSocial:hover{
+    color: var(--color-blue);
+    cursor: pointer;
+    text-decoration: underline;
+}
 
 /*q*/
 
 
 /*r*/
+.redes{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
 /*s*/
+
 .section{
     background-color: var(--color-green);
     color: var(--font-color-white);
@@ -282,3 +330,4 @@ body{
     cursor: pointer;
     color: var(--font-color-black);
 }
+
