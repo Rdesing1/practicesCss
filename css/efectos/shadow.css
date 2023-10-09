@@ -47,6 +47,7 @@ html{
 .h2{
     color: tomato;
     margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .h2::after{
@@ -91,4 +92,40 @@ html{
                   6rem 4rem .2rem var(--coral-color),
                  -3rem 6rem .2rem var(--black-color),
                   6rem 8rem .2rem var(--coral-color);
+}
+
+.lineal{
+    background-image: linear-gradient(-45deg,blue 30%,red,green); /*con lo aprendido haz la bandera de italia*/
+    background-image: linear-gradient(90deg, green 33%, white 34% 67%, red 68%);
+}
+
+.radial{
+    background-image: radial-gradient(red 20%,white 21% 100%);
+}
+
+.conico{
+    background-image: conic-gradient(
+        green 10%,
+        white 11% 15%,
+        red 16% 20%
+    );
+}
+
+
+.circle-gradient{
+    border-radius: 50%;
+    background-image: conic-gradient(
+        cyan 0 20%,
+        blue 20% 80%,
+        yellow 80%
+    );
+}
+.donut-gradient{
+    border-radius: 50%;
+    background-image: radial-gradient(white 50%,black 51% 52% ,transparent 53%),
+    conic-gradient(
+        cyan 0 20%,
+        blue 20% 80%,
+        yellow 80%
+    );
 }

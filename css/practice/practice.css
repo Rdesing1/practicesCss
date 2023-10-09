@@ -105,7 +105,11 @@ body{
 
 
 /*f*/
-
+.footer{
+    background-image: linear-gradient(-360deg,#b3b3b3c0,white);
+    padding: 1rem;
+    margin-top: 1rem;
+}
 
 /*g*/
 
@@ -154,6 +158,12 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+.h3-footer{
+    color: var(--font-color-black);
+    margin-bottom: 1rem;
+}
+
 
 .header{
     width: 100%;
