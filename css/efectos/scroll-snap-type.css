@@ -1,0 +1,66 @@
+html{
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root{
+    --font-family-oswald:font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    --bg-color-dark:#222;
+    --bg-color-white:#fff;
+    --bg-color-blue-enlace:#00c4d6;
+    --bg-color-pink-enlace:#e44bb4;
+    --color-font:#d9e8f0;
+    --bg-color-slide:#1e2345;
+    --bg-color-slideThow:#108e64;
+}
+
+.slides{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.slide{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align:end;
+}
+
+.slide:nth-child(even){
+    background-color: var(--bg-color-blue-enlace);
+}
+
+.slide:nth-child(odd){
+    background-color: var(--bg-color-slide);
+}
+
+.slide-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slide-container > .h1,.h2{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.h1{
+    font-size: 3vw;
+}
+
+.p{
+    line-height: 1.6rem;
+}
