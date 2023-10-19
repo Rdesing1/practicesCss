@@ -28,6 +28,41 @@ html{
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
+    
+}
+
+.container-slide{
+    width: 50%;
+    height: 50%;
+    border: thin solid white;
+    display: grid;
+    grid-template-columns: repeat(5, 100%);
+    overflow-x: scroll;
+    overflow-y: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: var(--color-font);
+    scroll-snap-align: center;
+}
+
+.content p{
+    text-align: center;
+    margin-top:1rem;
+    color: var(--bg-color-slideThow);
+}
+
+
+.content:nth-child(even){
+    background-color: var(--bg-color-blue-enlace);
 }
 
 .slide{
