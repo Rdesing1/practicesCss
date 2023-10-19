@@ -57,8 +57,9 @@ html{
 .content p{
     text-align: center;
     margin-top:1rem;
-    color: var(--bg-color-slideThow);
+    
 }
+
 
 
 .content:nth-child(even){

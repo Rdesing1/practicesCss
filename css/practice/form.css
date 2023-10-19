@@ -1,0 +1,150 @@
+html{
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: inherit;
+}
+
+.header{
+    width: 100%;
+    height: 60px;
+    border-bottom: thin solid #22222210;
+    padding: 0px 3rem;
+    display: flex;
+    align-items: center;
+    box-shadow: .3rem 0 1rem .1rem #2222225d;
+    margin-bottom: 3rem;
+}
+
+.header .btn{
+    width: 5rem;
+    padding: .3rem;
+    border: none;
+    border-radius: 3rem;
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+}
+
+.left{
+    float: left;
+    margin-left: .3rem;
+}
+
+.right{
+    float: right;
+    margin-right: .3rem;
+}
+
+.main{
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-form{
+    width: 110px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 50px;
+    
+}
+
+.container-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: thin solid black;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 110px;
+    
+}
+
+label{
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    right:34%;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    
+}
+
+label::after{
+    content: ':';
+}
+
+input[type='text'],
+input[type='password']{
+    width: 90%;
+    padding: .7rem 0; /* primera posicion en (y) y la segunda en (x) */
+    display: inline-block;
+    border: none;
+    border-bottom: thin solid #222;
+    
+}
+
+
+input[type='password']:focus,
+input[type='text']:focus{
+    border-bottom: 2px solid #222;
+    outline: none;
+}
+
+input::placeholder{
+    
+}
+
+.btn-form{
+    width: 90%;
+    margin: 1rem 0;
+    padding: .5rem;
+    border: none;
+    background-color: rgba(190, 14, 14, 0.925);
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.btn-form:active{
+    background-color: rgba(228, 11, 11, 0.925); ;
+}   
+
+.content-p{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 2rem;
+    padding-left: 5%;
+}
+
+.p{
+    font-size: .8rem;
+    margin-bottom: .2rem;
+    font-weight: 100;
+    color: rgb(131, 128, 128);
+
+}
+
