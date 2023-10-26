@@ -1,0 +1,118 @@
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: inherit;
+}
+
+.header {
+    width: 100%;
+    padding: 1rem 1rem;
+    background-color: antiquewhite;
+    margin-bottom: 2rem;
+}
+
+.h1-header {
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    color: black;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.123);
+}
+
+.main {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes miAnimiacion {
+    from {
+        opacity: 0;
+        transform: translateX(-1000px);
+    }
+
+    to {
+        z-index: 40;
+        opacity: 1;
+    }
+}
+
+
+.card-animated {
+    display: flex;
+    justify-content: center;
+    width: 340px;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+
+.figure {
+    position: relative;
+}
+
+.figcaption {
+    background-color: brown;
+    width: auto;
+    font-size: 1.4rem;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: .4rem;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    text-align: center;
+    box-shadow: 0rem 1rem .4rem .1rem black;
+    animation-duration: 2s;
+    animation-name: miAnimiacion;
+}
+
+.img {
+
+    width: 300px;
+    height: 200px;
+}
+
+.h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    text-indent: 1rem;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+
+@keyframes miSpinner {
+    from {
+        opacity: .3;
+        transform: rotate(360deg);
+    }
+
+    do {
+        opacity: 1;
+        transform: rotate(-360deg);
+    }
+}
+
+.spinner {
+    border: 10px solid gainsboro;
+    border-left-color: blue;
+    border-radius: 50%;
+    margin-left: 1rem;
+    width: 100px;
+    height: 100px;
+
+    /*propiedades de la animacion*/
+    animation-name: miSpinner;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: .4s;
+}

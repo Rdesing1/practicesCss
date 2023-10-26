@@ -1,0 +1,18 @@
+{
+    "terminal.integrated.defaultProfile.linux": "bash (2)",
+    "workbench.sideBar.location": "right",
+    "workbench.editor.showTabs": false,
+    "workbench.statusBar.visible": false,
+    "workbench.activityBar.visible": false,
+    "editor.minimap.enabled": false,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.overviewRulerBorder": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.formatOnSave": true,
+    "editor.guides.indentation": false,
+    "editor.glyphMargin": false,
+    "indenticator.width": 0.1,
+    "indenticator.color.dark": "rgba(255,255,255,0.1)",
+    "breadcrumbs.enabled": false,
+    "editor.fontFamily": "'Cascadia code'",
+}
